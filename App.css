@@ -1,0 +1,156 @@
+body {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items {
+  margin: 0 1rem;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-items a:hover {
+  color: rgb(48, 211, 189);
+}
+
+#check-button {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.div-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-a {
+  font-size: 2rem;
+  padding-left: 80px;
+
+}
+
+.text-b {
+  font-size: 3rem;
+  padding-left: 150px;
+
+}
+
+.text-c {
+  font-size: 1.5rem;
+  padding-left: 150px;
+
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+  padding: 2rem;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
+.card-title {
+  color: white;
+}
+
+.card-text {
+  color: black;
+}
+
+.card-button {
+  background: rgb(48, 211, 189);
+  border: none;
+  color: black;
+}
+
+.skills {
+  height: 1rem;
+  border-radius: 25px;
+}
+
+.aboutme {
+  color: rgb(48, 211, 189);
+}
+
+.aboutme-b {
+  color: white;
+}
+
+.slide-bar-text {
+  color: white;
+}
+
+.c {
+  background: rgba(255, 255, 255, 0.1);
+  height: 1rem;
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+}
+#Home{
+  width: 50vw;
+  height:100vh;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .nav-items {
+    margin: 0.5rem 0;
+  }
+
+  #check-button {
+    display: block;
+  }
+
+  ul {
+    display: none;
+  }
+
+  #check:checked ~ ul {
+    display: block;
+  }
+}
